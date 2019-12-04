@@ -7,6 +7,7 @@ import { Action, Dispatch } from 'redux';
 import { StateType } from '@/pages/model';
 // @ts-ignore
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Link } from 'umi';
 
 const { Search } = Input;
 
@@ -61,6 +62,16 @@ export default class Index extends Component <IndexProps> {
               </div>}</Col>
 
 
+          </Row>
+
+          <Row>
+            <Col span={12} offset={6}>
+              <div style={{ backgroundSize: 512, maxHeight: 640, marginTop: 20 }}>
+                <a href={`https://cloud.tencent.com/act/cps/redirect?redirect=1052&cps_key=d7fa941b22714852fa704cc3e74e85a2&from=console`} target={`_blank`}>
+                  <img src={require('../assets/tencent-1340.640.jpg')} alt={`热门云产品限量特惠秒杀，云服务器1核2G，99元/1年`} width="100%" height="100%"/>
+                </a>
+              </div>
+            </Col>
           </Row>
         </div>
 
